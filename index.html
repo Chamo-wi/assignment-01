@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Mobile Mart</title>
+
+    <style>
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                font-family: sans-serif;
+            }
+
+            #title{
+                text-align: center;
+                background-color: #4C4FAE;
+                color: white;
+                padding: 10px;
+            }
+
+            #phones{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #EDEDED;
+            }
+
+            #cart > img {
+                width: 100px;
+            }
+
+            .phone{
+                display: flex;
+                background-color: #FFFFFF;
+                width: 15%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 5px;
+                margin: 10px;
+                }
+
+            .phone > button{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: #4D4EAF;
+                border: none;
+                color: #FFFFFF;
+                padding: 10px;
+                cursor: pointer;
+                bottom: 0px;
+                border-radius: 5px;
+            }
+            
+            .phone > img{
+                width: 12vw;
+            }
+
+
+            #cart{
+                background-color: #E4AF23;
+                height: 37vh;
+            }
+
+            #cart-title{
+                color: white;
+                text-align: center;
+                padding: 10px;
+                
+            }
+
+            #cart-container{
+                display: flex;
+            }
+
+            #cart-icon{
+                margin: 20px;
+                width: 100px;
+            }
+
+            #list{
+                margin: 30px;
+            }
+
+            .cart-close-button{
+                width: 1.5rem; 
+                padding-left: 10px; 
+            }
+
+    </style>
+  </head>
+  <body>
+    <h1 id = "title">Items</h1>
+    <div id = "phones">
+        <div class="phone">
+          <img src="media/img-1.jpg" alt="">
+          <h3>Samsung Galaxy A03s</h3>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="phone">
+          <img src="media/img-2.jpg" alt="">
+          <h3>Huawei Nova Y70 (2022)</h3>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="phone">
+          <img src="media/img-3.jpg" alt="">
+          <h3>Apple iPhone 11 64GB</h3>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="phone">
+          <img src="media/img-4.jpg" alt="">
+          <h3>Apple iPhone 13 Pro - 128GB</h3>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="phone">
+          <img src="media/img-5.jpg" alt="">
+          <h3>Apple iPhone SE 3 (2022) 64GB</h3>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div id = "cart">
+        <h1 id = "cart-title">Cart</h1>
+        <div id="cart-container">
+          <img id = "cart-icon" src="media/cart.png">
+          <div>
+            <ol id = "list">
+                <li><strong>Samsung Galaxy A03s</strong><img src = "media/close-button.png" class="cart-close-button"/></li>
+                <li><strong>Huawei Nova Y70 (2022)</strong><img src = "media/close-button.png" class="cart-close-button"/></li>
+                <li><strong>Apple iPhone 13 Pro</strong><img src = "media/close-button.png" class="cart-close-button"/></li>
+            </ol>
+          </div>
+        </div>
+    </div>
+
+  </body>
+</html>
